@@ -7,7 +7,7 @@ namespace TwoPointer // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            int[] result = TestMethod(new int[] {2,5,9,11}, 11);
+            int[] result = RemoveUnsortedKey.GetUnsortedKey(new int[] {2, 11, 2, 2, 1}, 2);
 
             for(int i = 0; i < result.Length; i++)
             {
