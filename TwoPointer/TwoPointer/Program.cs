@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TwoPointer // Note: actual namespace depends on the project name.
 {
@@ -6,7 +7,7 @@ namespace TwoPointer // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            int[] result = TestMethod(new int[] {1,2,3,4,6}, 6);
+            int[] result = TestMethod(new int[] {2,5,9,11}, 11);
 
             for(int i = 0; i < result.Length; i++)
             {
@@ -16,22 +17,22 @@ namespace TwoPointer // Note: actual namespace depends on the project name.
 
         private static int[] TestMethod(int[] intArr, int target)
         {
-            int endPoint = intArr.Length - 1;
-            int startPoint = 0;
+            Dictionary<int, int> hashMap = new();
 
-            while(intArr[startPoint] + intArr[endPoint] != target)
+            for(int i = 0; i < intArr.Length; i++)
             {
-                if (intArr[startPoint] + intArr[endPoint] > target)
+                if (hashMap.ContainsKey(target - intArr[i]))
                 {
-                    --endPoint;
+                    return new int[] { hashMap[target - intArr[i]], intArr[i] };
                 }
                 else
                 {
-                    ++startPoint;
+                    hashMap.Add(intArr[i], intArr[i]);
                 }
+               
             }
-
-            return new int[] { startPoint, endPoint };
+            //Pair not found
+            return new int[] { -1, -1 };
 
         }
     }
