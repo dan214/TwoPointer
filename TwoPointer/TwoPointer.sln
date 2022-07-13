@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoPointer", "TwoPointer\TwoPointer.csproj", "{36DA5B18-5AD1-4798-95C8-FAA95B9B8493}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36DA5B18-5AD1-4798-95C8-FAA95B9B8493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36DA5B18-5AD1-4798-95C8-FAA95B9B8493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36DA5B18-5AD1-4798-95C8-FAA95B9B8493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36DA5B18-5AD1-4798-95C8-FAA95B9B8493}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EC9DD11-BAB0-46A1-B82E-19A48A9B14C5}
+	EndGlobalSection
+EndGlobal
